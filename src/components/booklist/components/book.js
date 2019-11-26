@@ -38,7 +38,7 @@ const Book = ({ classes, book, typesMapping }) => {
         } else if (column.id === 'edit') {
           return (
             <TableCell key={column.id}>
-              <Link to={{ pathname: '/edit', state: { bookId: book.id } }}>
+              <Link to={{ pathname: `/edit/:${book.id}` }}>
                 <Fab color="secondary" aria-label="edit">
                   <EditIcon />
                 </Fab>
